@@ -23,3 +23,5 @@ SELECT * FROM HATENDIMENTOBASE
 #Cria uma string com a consulta específica para o banco de dados.
 
 dataset = pd.read_sql(query, engine) #Realiza uma leitura do banco de dados usando esta consulta e retorna os valores como um dataset
+
+print(dataset)
