@@ -18,29 +18,7 @@ params = urllib.parse.quote_plus(
 engine = create_engine(f"mssql+pyodbc:///?odbc_connect={params}")
 
 query = """
-USE [C8YL0N_134015_RM_PD]
-GO
-
-SELECT [CODCOLIGADA]
-      ,[IDENTIFICADOR_MOV]
-      ,[CODATENDIMENTO]
-      ,[TIPO_MOVIMENTO]
-      ,[DATAEMISSAO]
-      ,[FILIAL]
-      ,[ETAPA_ATUAL]
-      ,[STATUS_DO_ATENDIMENTO]
-      ,[OBSERVACAO_MOV]
-      ,[PRODUTO]
-      ,[QUANTIDADE]
-      ,[PRECO_ITEM]
-      ,[UNIDADE]
-      ,[CENTRO_DE_CUSTO]
-      ,[DIRETOR]
-      ,[SOLICITANTE]
-      ,[ABERTURA_ATENDIMENTO]
-  FROM [dbo].[DASHBOARD_APROVACOESCAMILA]
-
-GO
+SELECT * FROM DASHBOARD_APROVACOESCAMILA
 """
 #Cria uma string com a consulta específica para o banco de dados.
 
