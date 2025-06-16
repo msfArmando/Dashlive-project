@@ -240,3 +240,5 @@ with open(txt_file, "rb") as f:
 
 print("Status:", response.status_code)
 print("Resposta:", response.text)
+
+#test
