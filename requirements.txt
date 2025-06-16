@@ -1,0 +1,13 @@
+sqlalchemy
+urllib
+pandas
+streamlit
+plotly.express
+numpy
+matplotlib.pyplot
+matplotlib.ticker
+matplotlib.animation
+requests
+requests.auth
+os
+python-dotenv
